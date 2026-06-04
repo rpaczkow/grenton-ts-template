@@ -40,7 +40,7 @@ TypeScript → TSTL compiler → Lua  → luabundler → single bundled Lua file
    npm run build
    ```
 
-   This compiles TypeScript to Lua and produces a single bundled file at `dist/src/Clu_OnInit_bundle.lua`.
+   This compiles TypeScript to Lua and produces a single bundled file at `dist/Clu_OnInit_bundle.lua`.
 
 5. **Deploy to the CLU**
 
@@ -64,9 +64,8 @@ grenton-ts-template/
 ├── src/
 │   └── Clu_OnInit.ts      # Main script — runs on CLU OnInit event
 ├── dist/
-│   └── src/
-│       ├── Clu_OnInit.lua          # Compiled Lua
-│       └── Clu_OnInit_bundle.lua   # Bundled Lua — this is what you deploy
+│   ├── Clu_OnInit.lua          # Compiled Lua
+│   └── Clu_OnInit_bundle.lua   # Bundled Lua — this is what you deploy
 ├── tsconfig.json
 └── package.json
 ```

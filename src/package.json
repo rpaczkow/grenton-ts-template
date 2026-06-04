@@ -2,7 +2,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "compile": "npm run clean && tstl",
-    "bundle:clu": "luabundler bundle ./dist/src/Clu_OnInit.lua -p ./dist/?.lua -o ./dist/src/Clu_OnInit_bundle.lua",
+    "bundle:clu": "luabundler bundle ../dist/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/Clu_OnInit_bundle.lua",
     "build": "npm run compile && npm run bundle:clu"
   },
   "devDependencies": {

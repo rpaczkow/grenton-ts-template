@@ -1,5 +1,5 @@
-import * as dIn from "../node_modules/grenton-ts/dist/digital-in-din/fv02_01/din";
-import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fv02_02/dout";
+import * as dIn from "./node_modules/grenton-ts/dist/digital-in-din/fv02_01/din";
+import * as dOut from "./node_modules/grenton-ts/dist/io-module-din-8/fv02_02/dout";
 
 /*
     This script demonstrates how to use a digital input (DIn) to control a digital output (DOut). 

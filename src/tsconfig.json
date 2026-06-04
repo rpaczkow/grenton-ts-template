@@ -19,9 +19,9 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist"
+    "outDir": "../dist"
   },
-  "include": ["./src", "./node_modules/grenton-ts/**/*.ts"],
+  "include": ["./", "./node_modules/grenton-ts/**/*.ts"],
   "tstl": {
     "luaTarget": "5.1"
   }
