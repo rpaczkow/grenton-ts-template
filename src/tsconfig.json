@@ -23,6 +23,7 @@
   },
   "include": ["./", "./node_modules/grenton-ts/**/*.ts"],
   "tstl": {
-    "luaTarget": "5.1"
+    "luaTarget": "5.1",
+    "luaLibImport": "require-minimal"
   }
 }
