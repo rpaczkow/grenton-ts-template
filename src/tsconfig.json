@@ -22,6 +22,7 @@
     "outDir": "../dist"
   },
   "include": ["./", "./node_modules/grenton-ts/**/*.ts"],
+  "exclude": ["./node_modules/grenton-ts/dist/examples/**", "./examples/**"],
   "tstl": {
     "luaTarget": "5.1",
     "luaLibImport": "require-minimal"
