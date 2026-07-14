@@ -1,6 +1,6 @@
-import * as dIn from "../node_modules/grenton-ts/dist/digital-in-din/fv01_02/din";
-import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fv02_02/dout";
-import * as pre from "../node_modules/grenton-ts/dist/clu-zwave-2/fv515_03/presence-sensor";
+import * as dIn from "../node_modules/grenton-ts/dist/digital-in-din/fwType_02_fwApiVersion_01/din";
+import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
+import * as pre from "../node_modules/grenton-ts/dist/clu-zwave-2/fwType_03_fwApiVersion_515/presence-sensor";
 
 /*
     This script demonstrates how to control a light using a presence sensor.

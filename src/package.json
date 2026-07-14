@@ -13,7 +13,7 @@
     "build": "npm run compile && npm run bundle:all"
   },
   "devDependencies": {
-    "grenton-ts": "^1.1.1",
+    "grenton-ts": "^1.1.2",
     "lua-types": "^2.14.1",
     "luabundler": "^1.2.3",
     "rimraf": "^6.1.3",
