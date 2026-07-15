@@ -26,13 +26,16 @@ TypeScript → TSTL compiler → Lua  → luabundler → single bundled Lua file
 
 2. **Install dependencies**
 
+   The npm project lives in `src/`, so run commands from there:
+
    ```bash
+   cd src
    npm install
    ```
 
-3. **Edit the example script**
+3. **Edit an example script**
 
-   Open [src/Clu_OnInit.ts](src/Clu_OnInit.ts) and replace the example Object IDs with the actual IDs from your Grenton project. You can find them in Object Manager by double-clicking on an object in the objects tree and copying the value from the **Id** field.
+   Pick one of the example folders under `src/` (e.g. [src/light_turned_on_by_switch/Clu_OnInit.ts](src/light_turned_on_by_switch/Clu_OnInit.ts)) and replace the example Object IDs with the actual IDs from your Grenton project. You can find them in Object Manager by double-clicking on an object in the objects tree and copying the value from the **Id** field.
 
 4. **Build**
 
@@ -40,21 +43,24 @@ TypeScript → TSTL compiler → Lua  → luabundler → single bundled Lua file
    npm run build
    ```
 
-   This compiles TypeScript to Lua and produces a single bundled file at `dist/Clu_OnInit_bundle.lua`.
+   This compiles every example under `src/` to Lua and produces a bundled file for each at `dist/<example>/Clu_OnInit_bundle.lua`. To build a single example instead, run its individual bundle script, e.g. `npm run bundle:light_turned_on_by_switch`.
 
 5. **Deploy to the CLU**
 
    - Open Grenton Object Manager and navigate to the script that runs on the **OnInit** event (create one if it doesn't exist).
-   - Copy the contents of `dist/src/Clu_OnInit_bundle.lua` and paste them into the script editor.
+   - Copy the contents of the relevant `dist/<example>/Clu_OnInit_bundle.lua` and paste them into the script editor.
    - Save the project and send it to the CLU.
 
 ## Available scripts
 
+Run from `src/`.
+
 | Command | Description |
 |---|---|
-| `npm run build` | Compile TypeScript and bundle into a single Lua file |
+| `npm run build` | Compile all examples and bundle each into its own Lua file |
 | `npm run compile` | Compile TypeScript to Lua only (no bundle) |
-| `npm run bundle:clu` | Bundle the compiled Lua (requires a prior compile) |
+| `npm run bundle:all` | Bundle every already-compiled example |
+| `npm run bundle:<example>` | Bundle a single example, e.g. `npm run bundle:log_errors` |
 | `npm run clean` | Remove the `dist/` directory |
 
 ## Project structure
@@ -62,13 +68,30 @@ TypeScript → TSTL compiler → Lua  → luabundler → single bundled Lua file
 ```
 grenton-ts-template/
 ├── src/
-│   └── Clu_OnInit.ts      # Main script — runs on CLU OnInit event
-├── dist/
-│   ├── Clu_OnInit.lua          # Compiled Lua
-│   └── Clu_OnInit_bundle.lua   # Bundled Lua — this is what you deploy
-├── tsconfig.json
-└── package.json
+│   ├── light_turned_on_by_calendar/
+│   │   └── Clu_OnInit.ts
+│   ├── light_turned_on_by_presence_sensor/
+│   │   └── Clu_OnInit.ts
+│   ├── light_turned_on_by_switch/
+│   │   └── Clu_OnInit.ts
+│   ├── log_errors/
+│   │   └── Clu_OnInit.ts
+│   ├── module_versions/
+│   │   └── Clu_OnInit.ts
+│   ├── remote_communication/
+│   │   └── Clu_OnInit.ts
+│   ├── user_variables/
+│   │   └── Clu_OnInit.ts
+│   ├── tsconfig.json
+│   └── package.json
+├── dist/                              # compiled + bundled output (generated)
+│   └── <example>/
+│       ├── Clu_OnInit.lua             # Compiled Lua
+│       └── Clu_OnInit_bundle.lua      # Bundled Lua — this is what you deploy
+└── LICENSE
 ```
+
+Each folder under `src/` is a standalone example script with its own `Clu_OnInit.ts` entry point. `npm run build` compiles all of them and bundles each into its own `dist/<example>/Clu_OnInit_bundle.lua`.
 
 ## Key dependencies
 
