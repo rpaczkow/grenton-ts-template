@@ -1,5 +1,5 @@
-import * as rollerLatest from "../node_modules/grenton-ts/dist/roller-sh-din/latest/roller-shutter";
-import * as rollerFv0102 from "../node_modules/grenton-ts/dist/roller-sh-din/fwType_02_fwApiVersion_01/roller-shutter";
+import * as rollerLatest from "../../node_modules/grenton-ts/dist/roller-sh-din/latest/roller-shutter";
+import * as rollerFv0102 from "../../node_modules/grenton-ts/dist/roller-sh-din/fwType_02_fwApiVersion_01/roller-shutter";
 
 /*
     This script demonstrates how to import the latest version of a module, or pin it to a specific

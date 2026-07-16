@@ -1,6 +1,6 @@
-import * as dIn from "../node_modules/grenton-ts/dist/digital-in-din/fwType_02_fwApiVersion_01/din"
-import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
-import { logInfo, logWarning  } from "../node_modules/grenton-ts/dist/log";
+import * as dIn from "../../node_modules/grenton-ts/dist/digital-in-din/fwType_02_fwApiVersion_01/din"
+import * as dOut from "../../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
+import { logInfo, logWarning  } from "../../node_modules/grenton-ts/dist/log";
 
 /*
     This script demonstrates how to log errors or any other information to telnet (diagnostic view). 

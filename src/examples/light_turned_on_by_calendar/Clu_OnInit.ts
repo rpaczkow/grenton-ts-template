@@ -1,6 +1,6 @@
-import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
-import * as cal from "../node_modules/grenton-ts/dist/clu-zwave-2/fwType_03_fwApiVersion_515/calendar";
-import { CluZWave2, CluZWave2Raw } from "../node_modules/grenton-ts/dist/clu-zwave-2/fwType_03_fwApiVersion_515/clu-zwave-2";
+import * as dOut from "../../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
+import * as cal from "../../node_modules/grenton-ts/dist/clu-zwave-2/fwType_03_fwApiVersion_515/calendar";
+import { CluZWave2, CluZWave2Raw } from "../../node_modules/grenton-ts/dist/clu-zwave-2/fwType_03_fwApiVersion_515/clu-zwave-2";
 
 /*
     This script demonstrates how to control a light on a schedule using a Calendar object.

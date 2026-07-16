@@ -2,15 +2,8 @@
   "scripts": {
     "clean": "rimraf ../dist",
     "compile": "npm run clean && tstl",
-    "bundle:log_errors": "luabundler bundle ../dist/log_errors/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/log_errors/Clu_OnInit_bundle.lua",
-    "bundle:user_variables": "luabundler bundle ../dist/user_variables/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/user_variables/Clu_OnInit_bundle.lua",
-    "bundle:module_versions": "luabundler bundle ../dist/module_versions/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/module_versions/Clu_OnInit_bundle.lua",
-    "bundle:remote_communication": "luabundler bundle ../dist/remote_communication/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/remote_communication/Clu_OnInit_bundle.lua",
-    "bundle:light_turned_on_by_switch": "luabundler bundle ../dist/light_turned_on_by_switch/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/light_turned_on_by_switch/Clu_OnInit_bundle.lua",
-    "bundle:light_turned_on_by_presence_sensor": "luabundler bundle ../dist/light_turned_on_by_presence_sensor/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/light_turned_on_by_presence_sensor/Clu_OnInit_bundle.lua",
-    "bundle:light_turned_on_by_calendar": "luabundler bundle ../dist/light_turned_on_by_calendar/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/light_turned_on_by_calendar/Clu_OnInit_bundle.lua",
-    "bundle:all": "npm run bundle:log_errors && npm run bundle:user_variables && npm run bundle:module_versions && npm run bundle:remote_communication && npm run bundle:light_turned_on_by_switch && npm run bundle:light_turned_on_by_presence_sensor && npm run bundle:light_turned_on_by_calendar",
-    "build": "npm run compile && npm run bundle:all"
+    "bundle:my_grenton": "luabundler bundle ../dist/my_grenton/Clu_OnInit.lua -p ../dist/?.lua -o ../dist/my_grenton/Clu_OnInit_bundle.lua",
+    "build": "npm run compile && npm run bundle:my_grenton"
   },
   "devDependencies": {
     "grenton-ts": "^1.1.3",

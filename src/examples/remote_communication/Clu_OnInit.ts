@@ -1,7 +1,7 @@
-import { ModbusValueRemote } from "../node_modules/grenton-ts/dist/gate-modbus/latest/modbus-value";
-import { Timer, TimerRaw, ModeType } from "../node_modules/grenton-ts/dist/gate-modbus/latest/timer";
-import { RemoteGate, RemoteGateRaw } from "../node_modules/grenton-ts/dist/core/remote-gate";
-import { logInfo, logError } from "../node_modules/grenton-ts/dist/log";
+import { ModbusValueRemote } from "../../node_modules/grenton-ts/dist/gate-modbus/latest/modbus-value";
+import { Timer, TimerRaw, ModeType } from "../../node_modules/grenton-ts/dist/gate-modbus/latest/timer";
+import { RemoteGate, RemoteGateRaw } from "../../node_modules/grenton-ts/dist/core/remote-gate";
+import { logInfo, logError } from "../../node_modules/grenton-ts/dist/log";
 
 /*
     This script demonstrates how to periodically read a ModbusValue object from CLU remotely, 

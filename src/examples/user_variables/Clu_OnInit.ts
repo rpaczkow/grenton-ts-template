@@ -1,7 +1,7 @@
-import * as dIn from "../node_modules/grenton-ts/dist/digital-in-din/fwType_02_fwApiVersion_01/din";
-import * as dOut from "../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
-import { getVariable, setVariable } from "../node_modules/grenton-ts/dist/core/user-variables";
-import { logInfo } from "../node_modules/grenton-ts/dist/log";
+import * as dIn from "../../node_modules/grenton-ts/dist/digital-in-din/fwType_02_fwApiVersion_01/din";
+import * as dOut from "../../node_modules/grenton-ts/dist/io-module-din-8/fwType_02_fwApiVersion_02/dout";
+import { getVariable, setVariable } from "../../node_modules/grenton-ts/dist/core/user-variables";
+import { logInfo } from "../../node_modules/grenton-ts/dist/log";
 
 /*
     This script demonstrates how to read and write user variables.
